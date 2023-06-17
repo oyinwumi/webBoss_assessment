@@ -14,11 +14,11 @@ const Todo = ({ todo , removeTodo, completeTodo }) => {
         </div>
 
         <div className='ml-2 '>
-          <p className={`text-xl  break-all ${todo.isCompleted? " line-through text-black": ""}`}>{todo.todoText}</p>
+          <p className={`text-xl text-justify break-all ${todo.isCompleted? " line-through text-black": ""}`}>{todo.todoText}</p>
         </div>
      </div>
 
-      <div className='flex text-center justify-center text-xl gap-2 '>
+      <div className='flex text-center justify-center text-2xl text-red-700 gap-2 '>
        <span onClick={() => removeTodo(todo.id)}><RiDeleteBin6Line  /></span>
       </div>
     </div>

@@ -18,7 +18,7 @@ const TodoList = ({ todos , removeTodo, completeTodo }) => {
     }
 
   return (
-    <div className=' md:w-[500px] w-[250px]  mx-auto text-blue-600 text-lg'>
+    <div className=' md:p-10 p-0  mx-auto text-blue-600 text-lg'>
       {handleTodos()}
     
     </div>

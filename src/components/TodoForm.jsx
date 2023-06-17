@@ -2,8 +2,8 @@ import React from 'react'
 
 const TodoForm = ({id, type, value,onSubmit,onChange}) => {
   return (
-    <div className='p-10'>
-        <h1 className='text-2xl text-blue-600 text-center mt-14'>TODO APP</h1>
+    <div className='md:p-10  w-full'>
+        <h1 className='text-3xl text-blue-600 text-center mt-14'>TODO APP</h1>
         <p className='text-sm mt-2 text-blue-400 text-center'>Track and get your task done easily!</p>
         <form action="" id={`${id}-form`} onSubmit={(e) => onSubmit(e)}
           className='flex mt-14  px-10  justify-center'
@@ -11,7 +11,7 @@ const TodoForm = ({id, type, value,onSubmit,onChange}) => {
             <div className=''>
                 <input type={type} id={`${id}-input`} value={value} required placeholder='Enter your todo'
                   onChange={(e) => onChange(e)}
-                  className='border rounded outline-none p-3 border-blue-400   text-blue-500 text-xl'
+                  className='border rounded outline-none p-3 border-blue-400  lg:w-[500px] md:w-[600px] w-[250px]   text-blue-500 text-xl'
                 />
              
             </div>
